@@ -12,7 +12,7 @@ describe('helloWorld', () => {
       done();
     };
     helloWorld(event, context, callback);
-    expect(resp.statusCode).toBe(300);
+    expect(resp.statusCode).toBe(200);
   });
 });
 
