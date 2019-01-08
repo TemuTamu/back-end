@@ -6,8 +6,9 @@ version: 2
 jobs:
   build:
     working_directory: ~/hello-world-ci
-    only:
-      - /dev/dev-.*
+    branches:
+      only:
+        - /dev/dev-.*
 
     docker:
       # specify the version you desire here
