@@ -103,5 +103,10 @@ functions:
 #       Description: "Description for the output"
 #       Value: "Some output value"
 
+package:
+  exclude:
+    - coverage/**
+    - .circleci/**
+
 plugins:
   - serverless-offline
