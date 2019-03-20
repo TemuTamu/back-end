@@ -1,0 +1,38 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "dev": "sls offline start --skipCacheInvalidation",
+    "local": "nodemon ./lib/app.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10",
+    "serverless-offline": "^3.31.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "mongoose": "^5.4.19",
+    "serverless-http": "^1.9.1"
+  }
+}
